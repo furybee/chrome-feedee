@@ -1,0 +1,117 @@
+{
+  "extName": {
+    "message": "Feedee"
+  },
+  "extDescription": {
+    "message": "Surveille des flux RSS et notifie lors de nouvelles publications."
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher…"
+  },
+  "refreshTitle": {
+    "message": "Rafraîchir"
+  },
+  "settingsTitle": {
+    "message": "Paramètres"
+  },
+  "back": {
+    "message": "← Retour"
+  },
+  "addFeed": {
+    "message": "Ajouter un flux"
+  },
+  "feedNamePlaceholder": {
+    "message": "Nom (ex : GCP Status)"
+  },
+  "feedUrlPlaceholder": {
+    "message": "URL du flux RSS"
+  },
+  "addButton": {
+    "message": "Ajouter"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "autoRefresh": {
+    "message": "Rafraîchissement automatique"
+  },
+  "intervalLabel": {
+    "message": "Intervalle (minutes)"
+  },
+  "savedFeeds": {
+    "message": "Flux enregistrés"
+  },
+  "noFeeds": {
+    "message": "Aucun flux configuré."
+  },
+  "remove": {
+    "message": "Supprimer"
+  },
+  "loading": {
+    "message": "Chargement…"
+  },
+  "noFeedsHint": {
+    "message": "Aucun flux configuré. Ouvrez les paramètres pour en ajouter."
+  },
+  "noArticles": {
+    "message": "Aucun article."
+  },
+  "noResults": {
+    "message": "Aucun résultat pour « $QUERY$ ».",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitled": {
+    "message": "(sans titre)"
+  },
+  "loadError": {
+    "message": "Erreur lors du chargement."
+  },
+  "updatedAt": {
+    "message": "Mis à jour à $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusError": {
+    "message": "Erreur de chargement"
+  },
+  "errorPrefix": {
+    "message": "Erreur :"
+  },
+  "feedColorPlaceholder": {
+    "message": "Couleur du tag (optionnel)"
+  },
+  "displaySettings": {
+    "message": "Affichage"
+  },
+  "groupByDate": {
+    "message": "Grouper par date"
+  },
+  "dateToday": {
+    "message": "Aujourd'hui"
+  },
+  "dateThisWeek": {
+    "message": "Cette semaine"
+  },
+  "dateThisMonth": {
+    "message": "Ce mois-ci"
+  },
+  "dateThisYear": {
+    "message": "Cette année"
+  },
+  "dateOlder": {
+    "message": "Plus ancien"
+  },
+  "filterTitle": {
+    "message": "Filtrer"
+  },
+  "filterAll": {
+    "message": "Tous"
+  }
+}

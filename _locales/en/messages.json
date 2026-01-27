@@ -1,0 +1,117 @@
+{
+  "extName": {
+    "message": "Feedee"
+  },
+  "extDescription": {
+    "message": "Monitors RSS feeds and notifies you of new publications."
+  },
+  "searchPlaceholder": {
+    "message": "Search…"
+  },
+  "refreshTitle": {
+    "message": "Refresh"
+  },
+  "settingsTitle": {
+    "message": "Settings"
+  },
+  "back": {
+    "message": "← Back"
+  },
+  "addFeed": {
+    "message": "Add a feed"
+  },
+  "feedNamePlaceholder": {
+    "message": "Name (e.g. GCP Status)"
+  },
+  "feedUrlPlaceholder": {
+    "message": "RSS feed URL"
+  },
+  "addButton": {
+    "message": "Add"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "autoRefresh": {
+    "message": "Auto-refresh"
+  },
+  "intervalLabel": {
+    "message": "Interval (minutes)"
+  },
+  "savedFeeds": {
+    "message": "Saved feeds"
+  },
+  "noFeeds": {
+    "message": "No feeds configured."
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "loading": {
+    "message": "Loading…"
+  },
+  "noFeedsHint": {
+    "message": "No feeds configured. Open settings to add one."
+  },
+  "noArticles": {
+    "message": "No articles."
+  },
+  "noResults": {
+    "message": "No results for \"$QUERY$\".",
+    "placeholders": {
+      "query": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitled": {
+    "message": "(untitled)"
+  },
+  "loadError": {
+    "message": "Error loading articles."
+  },
+  "updatedAt": {
+    "message": "Updated at $TIME$",
+    "placeholders": {
+      "time": {
+        "content": "$1"
+      }
+    }
+  },
+  "statusError": {
+    "message": "Loading error"
+  },
+  "errorPrefix": {
+    "message": "Error:"
+  },
+  "feedColorPlaceholder": {
+    "message": "Tag color (optional)"
+  },
+  "displaySettings": {
+    "message": "Display"
+  },
+  "groupByDate": {
+    "message": "Group by date"
+  },
+  "dateToday": {
+    "message": "Today"
+  },
+  "dateThisWeek": {
+    "message": "This week"
+  },
+  "dateThisMonth": {
+    "message": "This month"
+  },
+  "dateThisYear": {
+    "message": "This year"
+  },
+  "dateOlder": {
+    "message": "Older"
+  },
+  "filterTitle": {
+    "message": "Filter"
+  },
+  "filterAll": {
+    "message": "All"
+  }
+}

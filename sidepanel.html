@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="lib/coloris.min.css">
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+
+  <header>
+    <input type="search" id="search-input">
+    <div class="filter-wrapper">
+      <button id="filter-btn" title="">&#x25BD;</button>
+      <div id="filter-dropdown" class="filter-dropdown hidden"></div>
+    </div>
+    <div class="header-actions">
+      <button id="refresh-btn"><span class="btn-icon">&#x21bb;</span></button>
+      <button id="settings-btn">&#x2699;</button>
+    </div>
+  </header>
+
+  <!-- Articles view (default) -->
+  <section id="view-articles">
+    <div id="articles-container">
+      <p class="placeholder" id="initial-loading"></p>
+    </div>
+  </section>
+
+  <!-- Settings view (hidden) -->
+  <section id="view-settings" class="hidden">
+    <div class="settings-header">
+      <button id="back-btn"></button>
+    </div>
+
+    <h2 id="settings-display-title"></h2>
+    <div class="setting-row">
+      <label for="group-by-date" id="group-by-date-label"></label>
+      <input type="checkbox" id="group-by-date">
+    </div>
+
+    <hr class="settings-separator">
+
+    <h2 id="settings-refresh-title"></h2>
+    <div class="setting-row">
+      <label for="refresh-interval" id="interval-label"></label>
+      <input type="number" id="refresh-interval" min="1" max="120" value="5">
+    </div>
+
+    <hr class="settings-separator">
+
+    <div class="feeds-title-row">
+      <h2 id="settings-feeds-title"></h2>
+      <button id="add-feed-btn" title="+">+</button>
+    </div>
+    <form id="add-form" class="hidden">
+      <input type="text" id="feed-name" required>
+      <input type="url" id="feed-url" required>
+      <input type="text" id="feed-color" data-coloris autocomplete="off">
+      <div class="form-actions">
+        <button type="button" id="cancel-btn"></button>
+        <button type="submit" id="add-btn"></button>
+      </div>
+    </form>
+
+    <ul id="feed-list"></ul>
+    <p id="no-feeds" class="placeholder hidden"></p>
+  </section>
+
+  <footer id="status-bar"></footer>
+
+  <script src="lib/coloris.min.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>
