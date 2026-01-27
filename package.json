@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "vite build",
+    "build:zip": "vite build && cd dist && zip -r ../feedee.zip .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
