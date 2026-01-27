@@ -114,6 +114,9 @@
   "filterAll": {
     "message": "Tous"
   },
+  "exportTitle": {
+    "message": "Exporter les flux"
+  },
   "footerSupport": {
     "message": "Feedee vous plait ? Soutenez-nous :"
   },

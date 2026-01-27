@@ -276,6 +276,17 @@ section {
   margin-bottom: 0 !important;
 }
 
+.feeds-actions {
+  display: flex;
+  gap: 4px;
+}
+
+#export-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+#export-btn,
 #add-feed-btn {
   background: none;
   border: 1px solid var(--accent);
@@ -291,6 +302,7 @@ section {
   justify-content: center;
 }
 
+#export-btn:hover,
 #add-feed-btn:hover {
   background: var(--accent);
   color: #fff;

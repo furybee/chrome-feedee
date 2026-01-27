@@ -20,6 +20,7 @@ const statusBar = document.getElementById("status-bar");
 const groupByDateCheckbox = document.getElementById("group-by-date");
 const filterBtn = document.getElementById("filter-btn");
 const filterDropdown = document.getElementById("filter-dropdown");
+const exportBtn = document.getElementById("export-btn");
 
 const DEFAULT_INTERVAL = 5;
 let lastFeedResults = [];
@@ -46,6 +47,7 @@ Coloris({
 searchInput.placeholder = msg("searchPlaceholder");
 refreshBtn.title = msg("refreshTitle");
 filterBtn.title = msg("filterTitle");
+exportBtn.title = msg("exportTitle");
 settingsBtn.title = msg("settingsTitle");
 backBtn.textContent = msg("back");
 feedNameInput.placeholder = msg("feedNamePlaceholder");
@@ -100,6 +102,21 @@ function hideAddForm() {
 
 addFeedBtn.addEventListener("click", showAddForm);
 cancelBtn.addEventListener("click", hideAddForm);
+
+// --- Export feeds ---
+
+exportBtn.addEventListener("click", async () => {
+  const { feeds = [] } = await chrome.storage.sync.get("feeds");
+  const json = JSON.stringify(feeds, null, 2);
+  const blob = new Blob([json], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const date = new Date().toISOString().slice(0, 10);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `feeds-${date}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
 
 // --- Feed CRUD ---
 

@@ -114,6 +114,9 @@
   "filterAll": {
     "message": "All"
   },
+  "exportTitle": {
+    "message": "Export feeds"
+  },
   "footerSupport": {
     "message": "Enjoying Feedee? Support us:"
   },
