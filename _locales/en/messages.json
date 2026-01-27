@@ -113,5 +113,11 @@
   },
   "filterAll": {
     "message": "All"
+  },
+  "footerSupport": {
+    "message": "Enjoying Feedee? Support us:"
+  },
+  "footerBug": {
+    "message": "Found a bug? Report it:"
   }
 }

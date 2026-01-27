@@ -113,5 +113,11 @@
   },
   "filterAll": {
     "message": "Tous"
+  },
+  "footerSupport": {
+    "message": "Feedee vous plait ? Soutenez-nous :"
+  },
+  "footerBug": {
+    "message": "Un bug ? Signalez-le :"
   }
 }

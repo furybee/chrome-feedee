@@ -539,8 +539,8 @@ section {
   max-height: 0;
 }
 
-/* --- Status bar --- */
-#status-bar {
+/* --- Footer --- */
+footer {
   padding: 6px 16px;
   font-size: 11px;
   color: var(--text-muted);
@@ -549,4 +549,22 @@ section {
   background: var(--surface);
   position: sticky;
   bottom: 0;
+}
+
+#status-bar {
+  margin-bottom: 4px;
+}
+
+.footer-links {
+  line-height: 1.6;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }

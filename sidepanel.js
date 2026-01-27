@@ -60,6 +60,8 @@ noFeeds.textContent = msg("noFeeds");
 document.getElementById("initial-loading").textContent = msg("loading");
 document.getElementById("settings-display-title").textContent = msg("displaySettings");
 document.getElementById("group-by-date-label").textContent = msg("groupByDate");
+document.getElementById("footer-support").textContent = msg("footerSupport");
+document.getElementById("footer-bug").textContent = msg("footerBug");
 
 // --- Navigation ---
 
