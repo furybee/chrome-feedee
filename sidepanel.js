@@ -566,6 +566,7 @@ async function refreshArticles() {
     }
     updateFilterBtnState();
     renderArticles(lastFeedResults, searchInput.value.trim());
+    chrome.runtime.sendMessage({ action: "resetBadge" }).catch(() => {});
     statusBar.textContent = msg("updatedAt", [
       new Date().toLocaleTimeString(),
     ]);
