@@ -35,6 +35,7 @@ async function checkAllFeeds() {
   const { seenGuids = {} } = await chrome.storage.local.get("seenGuids");
 
   let updated = false;
+  let newCount = 0;
 
   for (const feed of feeds) {
     try {
@@ -53,6 +54,7 @@ async function checkAllFeeds() {
         if (!knownGuids.has(id)) {
           knownGuids.add(id);
           updated = true;
+          newCount++;
 
           chrome.notifications.create(id, {
             type: "basic",
@@ -71,7 +73,15 @@ async function checkAllFeeds() {
 
   if (updated) {
     await chrome.storage.local.set({ seenGuids });
+    const { unreadCount = 0 } = await chrome.storage.local.get("unreadCount");
+    await updateBadge(unreadCount + newCount);
   }
+}
+
+async function updateBadge(count) {
+  await chrome.storage.local.set({ unreadCount: count });
+  chrome.action.setBadgeBackgroundColor({ color: "#E5422B" });
+  chrome.action.setBadgeText({ text: count > 0 ? String(count) : "" });
 }
 
 async function getAllItems() {
@@ -109,6 +119,10 @@ async function getAllItems() {
 chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
   if (message.action === "checkNow") {
     checkAllFeeds().then(() => sendResponse({ ok: true }));
+    return true;
+  }
+  if (message.action === "resetBadge") {
+    updateBadge(0).then(() => sendResponse({ ok: true }));
     return true;
   }
   if (message.action === "getItems") {

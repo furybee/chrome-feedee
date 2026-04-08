@@ -50,7 +50,14 @@
 
     <div class="feeds-title-row">
       <h2 id="settings-feeds-title"></h2>
-      <button id="add-feed-btn" title="+">+</button>
+      <div class="feeds-actions">
+        <button id="export-btn" title="">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>
+        </button>
+        <button id="add-feed-btn" title="+">+</button>
+      </div>
     </div>
     <form id="add-form" class="hidden">
       <input type="text" id="feed-name" required>
@@ -66,7 +73,29 @@
     <p id="no-feeds" class="placeholder hidden"></p>
   </section>
 
-  <footer id="status-bar"></footer>
+  <footer>
+    <div id="status-bar"></div>
+
+    <hr class="settings-separator">
+
+    <div class="footer-links">
+      <span id="footer-support"></span>
+      <br>
+      <a href="https://www.buymeacoffee.com/xyugxh7bk" target="_blank" rel="noopener">Buy me a coffee</a>
+      &bull;
+      <a href="https://donate.stripe.com/fZeg1Sgml971dbieUU" target="_blank" rel="noopener">Card</a>
+      &bull;
+      <a href="https://www.paypal.com/donate/?hosted_button_id=T7KZA4MLT5XTU" target="_blank" rel="noopener">PayPal</a>
+    </div>
+
+    <hr class="settings-separator">
+
+    <div class="footer-links">
+      <span id="footer-bug"></span>
+      <a href="https://github.com/furybee/chrome-feedee/issues" target="_blank" rel="noopener">github.com/furybee/chrome-feedee</a>
+      <br>
+    </div>
+  </footer>
 
   <script src="lib/coloris.min.js"></script>
   <script src="sidepanel.js"></script>

@@ -1,6 +1,6 @@
 {
   "extName": {
-    "message": "Feedee"
+    "message": "Feedee – RSS & Atom Feed Notifier"
   },
   "extDescription": {
     "message": "Surveille des flux RSS et notifie lors de nouvelles publications."
@@ -113,5 +113,14 @@
   },
   "filterAll": {
     "message": "Tous"
+  },
+  "exportTitle": {
+    "message": "Exporter les flux"
+  },
+  "footerSupport": {
+    "message": "Feedee vous plait ? Soutenez-nous :"
+  },
+  "footerBug": {
+    "message": "Un bug ? Signalez-le :"
   }
 }
